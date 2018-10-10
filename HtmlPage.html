@@ -1,0 +1,30 @@
+﻿<html>
+<head>
+    <title>Radians Calculator</title>
+</head>
+ <body>
+     <p>Radians Calculator</p>
+    <input id="txtDeg1" type="text"/>
+    <input id="btnTotal" type="button" value="Total" onclick="btnTotal_onclick()"/>
+    <p id="parRadians" style="background-color: red;"/>
+
+    <p><b>The Formula For Degrees To Radians Is Radians = (Degrees / 180) * PI (Or 3.1 In Short)</b></p>
+
+
+ </body>
+</html>
+
+ <script language="javascript">
+
+     var PI;
+     var Deg;
+     PI = 3.1;
+     Deg = 180;
+ 
+     function btnTotal_onclick() {
+         parRadians.innerText = (txtDeg1.value / Deg) * PI;
+     }
+
+    
+
+  </script>
